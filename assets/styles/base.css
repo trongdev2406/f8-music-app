@@ -1,0 +1,81 @@
+/* Reset CSS */
+:root {
+    --primary-color: #F23478;
+    --text-color: #BCBAD7;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-rounded {
+    clip-path: circle();
+}
+
+
+.app .icon-pause {
+    display: none;
+}
+
+.app.playing .icon-play {
+    display: none;
+}
+
+.app.playing .icon-pause {
+    display: block;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+.song.active{
+    background-color: var(--primary-color);
+    color: #fff;
+}

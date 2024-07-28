@@ -1,0 +1,138 @@
+/* Main CSS */
+@import url(./base.css);
+
+body {
+    background-color: #222;
+}
+
+.app {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-board {
+    position: fixed;
+    padding: 16px 16px 14px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 480px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.header span {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header .song-title {
+    font-weight: 700;
+}
+
+.cd {
+    margin: 0 auto;
+    width: 200px;
+}
+
+.cd__thumb {
+    background-image: url('https://i.scdn.co/image/ab67616d0000b2734a5584795dc73860653a9a3e');
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    background-size: cover;
+    margin: auto;
+}
+
+.control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.btn-toggle-play {
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: center;
+    width: 100%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 0.5rem;
+    opacity: 0.7;
+    border-radius: 4px;
+    border-color: transparent;
+    border-width: 2px 0;
+    background-color: var(--primary-color);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -0.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: #e1dddd;
+}
+
+.playlist {
+    background-color: #F3F2F7;
+    width: 100%;
+    padding: 24px;
+    margin-top: 400px;
+}
+
+.singer-image {
+    min-width: 76px;
+    min-height: 76px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0px 8px;
+}
+
+.song {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 32px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.song .song-info {
+    padding: 0 16px;
+    flex-grow: 1;
+}
+
+.song-info .song-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.song-info .song-name {
+    font-size: 12px;
+}
+
+.song .option {
+    padding: 0 16px;
+}
