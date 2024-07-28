@@ -270,7 +270,6 @@ const app = {
       if (songNode) {
         const index = parseInt(songNode.dataset.id);
         __this.currentIndex = index;
-        console.log(__this.currentIndex);
         __this.loadCurrentSong();
         audio.play();
       }
